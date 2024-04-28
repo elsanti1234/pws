@@ -27,7 +27,7 @@ input[type="email"],
 input[type="password"],
 input[type="text"],
 input[type="number"] {
-  width: calc(100% - 22px); /* Considera el ancho del borde */
+  width: 100%;
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
