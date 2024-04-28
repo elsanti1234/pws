@@ -1,0 +1,99 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Contenedor principal */
+  #splashScreen,
+  #registerForm,
+  #loginForm,
+  #dashboard,
+  #addTransaction,
+  #budgetSection,
+  #goalsSection {
+    width: 80%; /* Ajusta el ancho según tu preferencia */
+    margin: 20px auto; /* Centra el contenido */
+    text-align: center; /* Centra el texto */
+  }
+  
+  /* Estilos de encabezados */
+  h1, h2 {
+    color: #333; /* Color del texto */
+  }
+  
+  /* Estilos de enlaces */
+  a {
+    color: #007bff; /* Color azul */
+    text-decoration: none; /* Sin subrayado */
+    margin: 0 10px; /* Espacio entre enlaces */
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+  }
+  
+  /* Estilos de formularios */
+  form {
+    display: inline-block; /* Para alinear los elementos horizontalmente */
+    text-align: left; /* Alinea el texto a la izquierda */
+  }
+  
+  label {
+    display: block; /* Cada etiqueta en una nueva línea */
+    margin-top: 10px; /* Espacio arriba de cada etiqueta */
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"] {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 8px; /* Espaciado interno */
+    margin-top: 5px; /* Espacio arriba del input */
+    box-sizing: border-box; /* El ancho total incluye el padding */
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px; /* Espaciado interno */
+    background-color: #007bff; /* Color de fondo azul */
+    color: #fff; /* Color del texto blanco */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3; /* Color de fondo más oscuro al pasar el mouse */
+  }
+  
+  /* Estilos específicos para el formulario de registro */
+  #registerForm {
+    display: none; /* Oculta el formulario de registro por defecto */
+  }
+  
+  /* Estilos específicos para el formulario de inicio de sesión */
+  #loginForm {
+    display: none; /* Oculta el formulario de inicio de sesión por defecto */
+  }
+  
+  /* Estilos específicos para el tablero principal */
+  #dashboard {
+    display: none; /* Oculta el tablero principal por defecto */
+  }
+  
+  /* Estilos específicos para la sección de agregar transacción */
+  #addTransaction {
+    display: none; /* Oculta la sección de agregar transacción por defecto */
+  }
+  
+  /* Estilos específicos para la sección de presupuestos */
+  #budgetSection {
+    display: none; /* Oculta la sección de presupuestos por defecto */
+  }
+  
+  /* Estilos específicos para la sección de metas */
+  #goalsSection {
+    display: none; /* Oculta la sección de metas por defecto */
+  }
+  
