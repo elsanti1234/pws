@@ -8,7 +8,7 @@
     "theme_color": "#007bff",
     "scope": "/",
     "serviceworker": {
-      "src": "/sw.js"
+      "src": "/main.js"
     }
   }
   
