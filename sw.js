@@ -1,14 +1,14 @@
 // Nombre del caché
-const CACHE_NAME = 'my-site-cache-v1';
+const CACHE_NAME = 'https://elsanti1234.github.io/pws/';
 // Archivos a cachear
 const urlsToCache = [
   "/",
   "/index.html",
-  "/nuevoapp.css",
-  "/main.js"
+  "/main.js",
+  "/nuevoapp.css"
 ];
 
-// Escucha el evento 'install' para realizar la instalación del Service Worker
+// Instalación del Service Worker
 self.addEventListener('install', function(event) {
   console.log('Service Worker instalado');
   
@@ -22,12 +22,12 @@ self.addEventListener('install', function(event) {
   );
 });
 
-// Escucha el evento 'activate' para activar el Service Worker
+// Activación del Service Worker
 self.addEventListener('activate', function(event) {
   console.log('Service Worker activado');
 });
 
-// Escucha el evento 'fetch' para interceptar las solicitudes de red
+// Interceptar solicitudes de red
 self.addEventListener('fetch', function(event) {
   console.log('Interceptando solicitud:', event.request.url);
 
@@ -43,4 +43,18 @@ self.addEventListener('fetch', function(event) {
         return fetch(event.request);
       })
   );
+});
+
+// Escucha los mensajes enviados desde la página web
+self.addEventListener('message', function(event) {
+  if (event.data && event.data.action === 'login-clicked') {
+    // Aquí puedes agregar la lógica para manejar el clic del botón "Iniciar Sesión"
+    console.log('Se hizo clic en el botón "Iniciar Sesión"');
+  } else if (event.data && event.data.action === 'register-clicked') {
+    // Aquí puedes agregar la lógica para manejar el clic del botón "Registrarse"
+    console.log('Se hizo clic en el botón "Registrarse"');
+  } else if (event.data && event.data.action === 'logout-clicked') {
+    // Aquí puedes agregar la lógica para manejar el clic del botón "Cerrar Sesión"
+    console.log('Se hizo clic en el botón "Cerrar Sesión"');
+  }
 });
