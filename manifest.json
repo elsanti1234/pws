@@ -1,0 +1,26 @@
+{
+  "name": "Calculadora de Presupuesto Mensual y Planificador de Ahorros",
+  "short_name": "Calculadora Finanzas",
+  "description": "Una aplicación web para calcular el presupuesto mensual y planificar el ahorro.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#f0f0f0",
+  "theme_color": "#007bff",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "scope": "/",
+  "serviceworker": {
+    "src": "/service-worker.js",
+    "scope": "/"
+  }
+}
